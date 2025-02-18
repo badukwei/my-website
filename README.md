@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Wei-Chun Lin (林威均) - Web3 Engineer
+🚀 Full-Stack & Smart Contract Developer | Passionate about Blockchain, Decentralization, and Open Source Contribution.
 
-## Getting Started
+📞 Contact
+Email: linwgpeter@gmail.com
+GitHub: badukwei
+Phone: (+886) 0953854563
+🛠 Skills
+Programming Languages & Frameworks
+Frontend: JavaScript, TypeScript, React, Next.js, HTML, CSS
+Backend: Express.js
+Blockchain: Solidity, Move, Smart Contract Development
+Tools & Version Control: Git, GitHub
+💼 Work Experience
+TPI Software (2022 - 2024)
+Full-Stack Engineer
 
-First, run the development server:
+Developed a driver management system for Yoxi, valued at $1M USD.
+Increased team development efficiency by 50% through reusable components.
+Designed multiple Proof of Concept (POC) cases, aiding sales in securing $300K USD in deals.
+Unirep Social TW (2023 - 2024)
+Frontend Developer
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed a decentralized login system using Unirep Protocol, enhancing privacy and security.
+Resolved 50+ issues in the Unirep codebase, contributing to protocol stability.
+Wrote and executed unit tests, increasing test coverage by 80%.
+🏆 Hackathon Experience
+Sui Agent Typhoon (Sui Hackathon)
+Built a decentralized application on the Sui blockchain, becoming a finalist among 200+ teams.
+Developed a Web3-powered AI platform, where users create personalized AI agents linked to their own cryptocurrency.
+Designed and deployed Sui Move smart contracts, ensuring secure token management and governance.
+ETHGlobal Bangkok (ETH Hackathon) - Feb 2025
+Developed a privacy-focused Telegram bot for secure photo sharing, leveraging Nillion encryption technology.
+Optimized photo processing, creating compressed thumbnails for faster previews while maintaining encrypted storage.
+🎤 Community & Contributions
+Devcon 7 Volunteer - Nov 2024
+Assisted thousands of attendees and 100+ speakers at Ethereum's premier developer conference.
+Helped facilitate event operations and improve the attendee experience.
+🎓 Education
+Taipei Medical University - Biomedical Engineering
