@@ -90,6 +90,25 @@ const SuiHackathonSection = () => {
 									~$
 								</span>
 								<a
+									href="https://suiaicoin.vercel.app/"
+									className="text-red-500 hover:text-red-700 transition-colors font-mono underline"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									→ Visit the project
+								</a>
+							</div>
+						)}
+
+						{isFinished && (
+							<div className="flex">
+								<span className="text-teal-300 font-mono">
+									user@macbook:
+								</span>
+								<span className="text-gray-400 mr-2 font-mono">
+									~$
+								</span>
+								<a
 									href="#ethglobal-bangkok"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}
 								>
