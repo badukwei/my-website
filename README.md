@@ -5,7 +5,7 @@
 ## CONTACT
 
 -   Email: linwgpeter@gmail.com
--   [Website](https://badukwei.vercel.app/)
+-   Website: [Website](https://badukwei.vercel.app/)
 
 ## SKILLS
 
