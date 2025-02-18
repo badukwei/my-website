@@ -59,7 +59,7 @@ const EducationSection = () => {
 								</span>
 								<TypeAnimation
 									sequence={educationSequence.flatMap(
-										(cmd, index) => [
+										(cmd) => [
 											cmd,
 											1000,
 											() =>

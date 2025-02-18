@@ -5,6 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./section.module.css";
 
 const tpiSequence = [
+	"TPI SOFTWARE INTRO ------------",
+    "TPI Software (Ticker: 7781) is a publicly listed company in Taiwan, specializing in digital transformation software solutions",
+	"ACHIEVEMENTS ------------",
 	"Developed a comprehensive driver management system for Yoxi, valued at $1,000,000 USD",
 	"Increased team development efficiency by 50% through the creation of shared components",
 	"Designed various Proof of Concept cases, aiding the sales team in selling the product valued at $300,000 USD",

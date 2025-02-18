@@ -4,14 +4,18 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import styles from "./section.module.css";
 
-const suiHackathonSequence = [
+const ethglobalBangkokSequence = [
+	"ETHGLOBAL BANGKOK INTRO ------------",
+	"ETHGlobal Bangkok is a premier hackathon that empowers builders to explore cutting-edge Web3 technologies and develop innovative solutions.",
+	"ACHIEVEMENTS ------------",
 	"Developed a privacy-focused Telegram bot for secure photo sharing, leveraging Nillion's advanced encryption technology",
 	"Optimized photo processing, generating compressed thumbnails for quick previews while maintaining encrypted storage",
 ];
 
-const SuiHackathonSection = () => {
+
+const EthglobalBangkokSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);
-	const isFinished = logs.length === suiHackathonSequence.length;
+	const isFinished = logs.length === ethglobalBangkokSequence.length;
 
 	return (
 		<div className="flex justify-center items-center bg-gray-900 p-4 w-full">
@@ -46,7 +50,7 @@ const SuiHackathonSection = () => {
 							</div>
 						))}
 
-						{logs.length < suiHackathonSequence.length && (
+						{logs.length < ethglobalBangkokSequence.length && (
 							<div>
 								<span className="text-teal-300 font-mono">
 									user@macbook:
@@ -55,7 +59,7 @@ const SuiHackathonSection = () => {
 									~$
 								</span>
 								<TypeAnimation
-									sequence={suiHackathonSequence.flatMap(
+									sequence={ethglobalBangkokSequence.flatMap(
 										(cmd) => [
 											cmd,
 											1000,
@@ -99,4 +103,4 @@ const SuiHackathonSection = () => {
 	);
 };
 
-export default SuiHackathonSection;
+export default EthglobalBangkokSection;

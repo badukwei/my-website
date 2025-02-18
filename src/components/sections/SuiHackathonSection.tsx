@@ -5,10 +5,14 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./section.module.css";
 
 const suiHackathonSequence = [
-	"Developed a decentralized application on the Sui blockchainDeveloped a decentralized application on the Sui blockchain, reaching the finalist stage among 200+ teams",
+	"SUI AGENT TYPHOON INTRO ------------",
+	"Sui Agent Typhoon is a premier hackathon dedicated to advancing AI on the Sui blockchain. Participants are encouraged to build impactful, innovative solutions utilizing the Atoma Network and the Eliza framework, competing for top prizes",
+	"ACHIEVEMENTS ------------",
+	"Developed a decentralized application on the Sui blockchain, reaching the finalist stage among 200+ teams",
 	"Created a Web3-powered AI platform that enables users to create personalized AI Agents, each linked to its own custom cryptocurrency",
 	"Designed and deployed smart contracts using Sui Move, ensuring secure and efficient token management and governance mechanisms",
 ];
+
 
 const SuiHackathonSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);

@@ -5,13 +5,16 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "./section.module.css";
 import Link from "next/link";
 
-const suiHackathonSequence = [
+const devcon7VolunteerSequence = [
+	"DEVCON 7 VOLUNTEER INTRO ------------",
+	"Devcon 7 is the largest developer conference of the Ethereum ecosystem",
+	"ACHIEVEMENTS ------------",
 	"Contributed to the organization of Ethereum’s premier developer conference, assisting thousands attendees and 100+ speakers in navigating the event",
 ];
 
-const SuiHackathonSection = () => {
+const Devcon7VolunteerSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);
-	const isFinished = logs.length === suiHackathonSequence.length;
+	const isFinished = logs.length === devcon7VolunteerSequence.length;
 
 	return (
 		<div className="flex justify-center items-center bg-gray-900 p-4 w-full">
@@ -46,7 +49,7 @@ const SuiHackathonSection = () => {
 							</div>
 						))}
 
-						{logs.length < suiHackathonSequence.length && (
+						{logs.length < devcon7VolunteerSequence.length && (
 							<div>
 								<span className="text-teal-300 font-mono">
 									user@macbook:
@@ -55,7 +58,7 @@ const SuiHackathonSection = () => {
 									~$
 								</span>
 								<TypeAnimation
-									sequence={suiHackathonSequence.flatMap(
+									sequence={devcon7VolunteerSequence.flatMap(
 										(cmd) => [
 											cmd,
 											1000,
@@ -99,4 +102,4 @@ const SuiHackathonSection = () => {
 	);
 };
 
-export default SuiHackathonSection;
+export default Devcon7VolunteerSection;

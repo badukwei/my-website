@@ -61,7 +61,7 @@ const AboutSection = () => {
 								</span>
 								<TypeAnimation
 									sequence={commandSequence.flatMap(
-										(cmd, index) => [
+										(cmd) => [
 											cmd,
 											1000,
 											() =>

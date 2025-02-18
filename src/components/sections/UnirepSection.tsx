@@ -6,10 +6,14 @@ import styles from "./section.module.css";
 import Link from "next/link";
 
 const unirepSequence = [
-	"Developed and integrated a decentralized login system leveraging Unirep Protocol, enhancing user privacy and security",
+	"UNIREP TW INTRO ------------", 
+    "Unirep Taiwan is a project under the Ethereum Foundation, focusing on decentralized reputation and privacy-preserving social applications.",
+	"ACHIEVEMENTS ------------",
+    "Developed and integrated a decentralized login system leveraging Unirep Protocol, enhancing user privacy and security",
 	"Resolved over 50+ issues in the Unirep codebase, contributing to protocol stability and adoption",
 	"Wrote and executed unit tests, increasing test coverage by 80%, ensuring higher reliability of smart contract interactions",
 ];
+
 
 const UnirepSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);
