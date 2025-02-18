@@ -5,6 +5,7 @@
 ## CONTACT
 
 -   Email: linwgpeter@gmail.com
+-   [Website](https://badukwei.vercel.app/)
 
 ## SKILLS
 
@@ -38,6 +39,8 @@
 ## BLOCKCHAIN EXPERIENCE
 
 ### Sui Agent Typhoon (Sui Hackathon)
+
+-   [Project Link](https://suiaicoin.vercel.app/)
 
 -   Developed a decentralized application on the Sui blockchain, reaching the finalist stage among 200+ teams.
 -   Developed a Web3-powered AI platform that enables users to create personalized AI Agents, each linked to its own custom cryptocurrency.
