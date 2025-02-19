@@ -84,6 +84,25 @@ const UnirepSection = () => {
 								<span className="text-gray-400 mr-2 font-mono">
 									~$
 								</span>
+								<a
+									href="https://github.com/social-tw/social-tw-website"
+									className="text-red-500 hover:text-red-700 transition-colors font-mono underline"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									→ Check out the repository
+								</a>
+							</div>
+						)}
+
+						{isFinished && (
+							<div className="flex">
+								<span className="text-teal-300 font-mono">
+									user@macbook:
+								</span>
+								<span className="text-gray-400 mr-2 font-mono">
+									~$
+								</span>
 								<Link
 									href="/web3-experience"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}

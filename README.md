@@ -32,6 +32,7 @@
 
 **Frontend Developer**
 
+-   [Project Link](https://github.com/social-tw/social-tw-website)
 -   Developed and integrated a decentralized login system leveraging Unirep Protocol, enhancing user privacy and security.
 -   Resolved over 50+ issues in the Unirep codebase, contributing to protocol stability and adoption.
 -   Wrote and executed unit tests, increasing test coverage by 80%, ensuring higher reliability of smart contract interactions.
@@ -41,7 +42,6 @@
 ### Sui Agent Typhoon (Sui Hackathon)
 
 -   [Project Link](https://suiaicoin.vercel.app/)
-
 -   Developed a decentralized application on the Sui blockchain, reaching the finalist stage among 200+ teams.
 -   Developed a Web3-powered AI platform that enables users to create personalized AI Agents, each linked to its own custom cryptocurrency.
 -   Designed and deployed smart contracts using Sui Move, ensuring secure and efficient token management and governance mechanisms.
