@@ -13,7 +13,6 @@ const commandSequence = [
 	"I enjoy collaborating with teams and building meaningful projects",
 ];
 
-
 const AboutSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);
 	const isFinished = logs.length === commandSequence.length;
@@ -60,17 +59,11 @@ const AboutSection = () => {
 									~$
 								</span>
 								<TypeAnimation
-									sequence={commandSequence.flatMap(
-										(cmd) => [
-											cmd,
-											1000,
-											() =>
-												setLogs((prev) => [
-													...prev,
-													cmd,
-												]),
-										]
-									)}
+									sequence={commandSequence.flatMap((cmd) => [
+										cmd,
+										1000,
+										() => setLogs((prev) => [...prev, cmd]),
+									])}
 									wrapper="span"
 									speed={80}
 									repeat={0}
@@ -81,13 +74,15 @@ const AboutSection = () => {
 							</div>
 						)}
 						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
 								<a
 									href="#skills"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}

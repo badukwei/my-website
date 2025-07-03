@@ -24,7 +24,7 @@ const Devcon7VolunteerSection = () => {
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<div className="w-full h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
+				<div className="w-full h-20 md:h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
 					<h2 className="ml-2 text-gray-300 hover:text-teal-500 rounded-md font-medium transition-colors font-mono">
 						Devcon 7 Volunteer | 2024.11
 					</h2>
@@ -80,13 +80,15 @@ const Devcon7VolunteerSection = () => {
 						)}
 
 						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
 								<Link
 									href="/contact"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}

@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import styles from "./section.module.css";
+import Link from "next/link";
 
 const tpiSequence = [
 	"TPI SOFTWARE INTRO ------------",
-    "TPI Software (Ticker: 7781) is a publicly listed company in Taiwan, specializing in digital transformation software solutions",
+	"TPI Software (Ticker: 7781) is a publicly listed company in Taiwan, specializing in digital transformation software solutions",
 	"ACHIEVEMENTS ------------",
 	"Developed a comprehensive driver management system for Yoxi, valued at $1,000,000 USD",
 	"Increased team development efficiency by 50% through the creation of shared components",
@@ -25,7 +26,7 @@ const TPISection = () => {
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<div className="w-full h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
+				<div className="w-full h-40 md:h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
 					<h2 className="ml-2 text-gray-300 hover:text-teal-500 rounded-md font-medium transition-colors font-mono">
 						TPI Software | 2022.12 - 2024.10 | Full Stack Developer
 					</h2>
@@ -37,7 +38,7 @@ const TPISection = () => {
 				</div>
 
 				<div className="flex-grow overflow-y-auto font-mono text-green-400 w-full p-2">
-					<div className="bg-gray-900 w-full h-full border-t border-gray-700 shadow-inner flex flex-col p-2">
+					<div className="bg-gray-900 w-full md:h-full border-t border-gray-700 shadow-inner flex flex-col p-2">
 						{logs.map((log, index) => (
 							<div key={index}>
 								<span className="text-teal-300 font-mono">
@@ -75,19 +76,21 @@ const TPISection = () => {
 						)}
 
 						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
-								<a
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
+								<Link
 									href="#unirep-tw"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}
 								>
 									→ Click here to learn more
-								</a>
+								</Link>
 							</div>
 						)}
 					</div>

@@ -6,14 +6,13 @@ import styles from "./section.module.css";
 import Link from "next/link";
 
 const unirepSequence = [
-	"UNIREP TW INTRO ------------", 
-    "Unirep Taiwan is a project under the Ethereum Foundation, focusing on decentralized reputation and privacy-preserving social applications.",
+	"UNIREP TW INTRO ------------",
+	"Unirep Taiwan is a project under the Ethereum Foundation, focusing on decentralized reputation and privacy-preserving social applications.",
 	"ACHIEVEMENTS ------------",
-    "Developed and integrated a decentralized login system leveraging Unirep Protocol, enhancing user privacy and security",
+	"Developed and integrated a decentralized login system leveraging Unirep Protocol, enhancing user privacy and security",
 	"Resolved over 50+ issues in the Unirep codebase, contributing to protocol stability and adoption",
 	"Wrote and executed unit tests, increasing test coverage by 80%, ensuring higher reliability of smart contract interactions",
 ];
-
 
 const UnirepSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);
@@ -27,7 +26,7 @@ const UnirepSection = () => {
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<div className="w-full h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
+				<div className="w-full h-40 md:h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
 					<h2 className="ml-2 text-gray-300 hover:text-teal-500 rounded-md font-medium transition-colors font-mono">
 						Unirep Taiwan | 2023.05 - 2025.01 | Frontend Developer
 					</h2>
@@ -39,7 +38,7 @@ const UnirepSection = () => {
 				</div>
 
 				<div className="flex-grow overflow-y-auto font-mono text-green-400 w-full p-2">
-					<div className="bg-gray-900 w-full h-full border-t border-gray-700 shadow-inner flex flex-col p-2">
+					<div className="bg-gray-900 w-full md:h-full border-t border-gray-700 shadow-inner flex flex-col p-2">
 						{logs.map((log, index) => (
 							<div key={index}>
 								<span className="text-teal-300 font-mono">
@@ -77,32 +76,36 @@ const UnirepSection = () => {
 						)}
 
 						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
-								<a
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
+								<Link
 									href="https://github.com/social-tw/social-tw-website"
 									className="text-red-500 hover:text-red-700 transition-colors font-mono underline"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									→ Check out the repository
-								</a>
+								</Link>
 							</div>
 						)}
 
 						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
 								<Link
 									href="/web3-experience"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}

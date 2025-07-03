@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import styles from "./section.module.css";
+import Link from "next/link";
 
 const suiHackathonSequence = [
 	"SUI AGENT TYPHOON INTRO ------------",
@@ -12,7 +13,6 @@ const suiHackathonSequence = [
 	"Created a Web3-powered AI platform that enables users to create personalized AI Agents, each linked to its own custom cryptocurrency",
 	"Designed and deployed smart contracts using Sui Move, ensuring secure and efficient token management and governance mechanisms",
 ];
-
 
 const SuiHackathonSection = () => {
 	const [logs, setLogs] = useState<string[]>([]);
@@ -26,7 +26,7 @@ const SuiHackathonSection = () => {
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<div className="w-full h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
+				<div className="w-full h-40 md:h-10 bg-gray-700 rounded-t-lg flex items-center justify-between px-3">
 					<h2 className="ml-2 text-gray-300 hover:text-teal-500 rounded-md font-medium transition-colors font-mono">
 						Sui Agent Typhoon | Sui Hackathon | 2025.02
 					</h2>
@@ -38,7 +38,7 @@ const SuiHackathonSection = () => {
 				</div>
 
 				<div className="flex-grow overflow-y-auto font-mono text-green-400 w-full p-2">
-					<div className="bg-gray-900 w-full h-full border-t border-gray-700 shadow-inner flex flex-col p-2">
+					<div className="bg-gray-900 w-full md:h-full border-t border-gray-700 shadow-inner flex flex-col p-2">
 						{logs.map((log, index) => (
 							<div key={index}>
 								<span className="text-teal-300 font-mono">
@@ -81,39 +81,43 @@ const SuiHackathonSection = () => {
 							</div>
 						)}
 
-						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
-								<a
+						{/* {isFinished && (
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
+								<Link
 									href="https://suiaicoin.vercel.app/"
 									className="text-red-500 hover:text-red-700 transition-colors font-mono underline"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									→ Visit the project
-								</a>
+								</Link>
 							</div>
-						)}
+						)} */}
 
 						{isFinished && (
-							<div className="flex">
-								<span className="text-teal-300 font-mono">
-									user@macbook:
-								</span>
-								<span className="text-gray-400 mr-2 font-mono">
-									~$
-								</span>
-								<a
-									href="#ethglobal-bangkok"
+							<div className="flex flex-col">
+								<div>
+									<span className="text-teal-300 font-mono">
+										user@macbook:
+									</span>
+									<span className="text-gray-400 mr-2 font-mono">
+										~$
+									</span>
+								</div>
+								<Link
+									href="#devcon-7-volunteer"
 									className={`${styles.animateBlink} text-teal-300 hover:text-teal-500 transition-colors font-mono`}
 								>
 									→ Click here to learn more
-								</a>
+								</Link>
 							</div>
 						)}
 					</div>

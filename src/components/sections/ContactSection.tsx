@@ -3,14 +3,25 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
-const contactSequence = [
-	"Email: linwgpeter@gmail.com",
-	"LinkedIn: https://www.linkedin.com/in/weichunlin8611",
-	"GitHub: https://github.com/badukwei",
+interface ContactInfo {
+	text: string;
+	url?: string;
+}
+
+const contactSequence: ContactInfo[] = [
+	{ text: "Email: linwgpeter@gmail.com", url: "mailto:linwgpeter@gmail.com" },
+	{
+		text: "LinkedIn: Click to view profile",
+		url: "https://www.linkedin.com/in/weichunlin8611",
+	},
+	{
+		text: "GitHub: Click to view profile",
+		url: "https://github.com/badukwei",
+	},
 ];
 
 const ContactSection = () => {
-	const [logs, setLogs] = useState<string[]>([]);
+	const [logs, setLogs] = useState<ContactInfo[]>([]);
 
 	return (
 		<div className="flex justify-center items-center bg-gray-900 p-4 w-full">
@@ -41,7 +52,20 @@ const ContactSection = () => {
 								<span className="text-gray-400 mr-2 font-mono">
 									~$
 								</span>
-								<span className="font-mono">{log}</span>
+								{log.url ? (
+									<a
+										href={log.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="font-mono text-green-400 transition-colors underline"
+									>
+										{log.text}
+									</a>
+								) : (
+									<span className="font-mono text-green-400">
+										{log.text}
+									</span>
+								)}
 							</div>
 						))}
 
@@ -54,23 +78,17 @@ const ContactSection = () => {
 									~$
 								</span>
 								<TypeAnimation
-									sequence={contactSequence.flatMap(
-										(cmd) => [
-											cmd,
-											1000,
-											() =>
-												setLogs((prev) => [
-													...prev,
-													cmd,
-												]),
-										]
-									)}
+									sequence={contactSequence.flatMap((cmd) => [
+										cmd.text,
+										1000,
+										() => setLogs((prev) => [...prev, cmd]),
+									])}
 									wrapper="span"
 									speed={80}
 									repeat={0}
 									cursor={true}
 									omitDeletionAnimation={true}
-									className="font-mono"
+									className="font-mono text-wrap"
 								/>
 							</div>
 						)}
